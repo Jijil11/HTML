@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .glow-button {
+      padding: 12px 30px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff9900, #ff5e00);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff9900;
+      animation: glowAnimation 2s infinite alternate, bgAnimation 5s infinite linear;
+      transition: transform 0.2s;
+    }
+
+    .glow-button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Glow effect animation */
+    @keyframes glowAnimation {
+      from {
+        box-shadow: 0 0 10px #ff9900;
+      }
+      to {
+        box-shadow: 0 0 20px #ff5e00, 0 0 30px #ff9900;
+      }
+    }
+
+    /* Background gradient animation */
+    @keyframes bgAnimation {
+      0% {
+        background: linear-gradient(45deg, #ff9900, #ff5e00);
+      }
+      50% {
+        background: linear-gradient(45deg, #ff5e00, #ffaa00);
+      }
+      100% {
+        background: linear-gradient(45deg, #ff9900, #ff5e00);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="glow-button">Buy Now</button>
+
+</body>
+</html>

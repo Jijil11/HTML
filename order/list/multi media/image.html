@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinkedIn Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f3f2ef;
+        }
+
+        /* Header */
+        header {
+            background-color: #0a66c2;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Search */
+        section form {
+            padding: 15px 20px;
+            background-color: white;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #0a66c2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004182;
+        }
+
+        /* Profile Section */
+        .profile {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+        }
+
+        /* Feed */
+        .feed {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .feed article {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .feed article:last-child {
+            border-bottom: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a66c2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>LinkedIn</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">My Network</a>
+            <a href="#">Jobs</a>
+            <a href="#">Messaging</a>
+            <a href="#">Notifications</a>
+            <a href="#">Me</a>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <section>
+        <form>
+            <input type="text" placeholder="Search for people, jobs, companies">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <h2>Your Profile</h2>
+        <img src="https://via.placeholder.com/100" alt="Profile Picture">
+        <p><strong>Name:</strong> Your Name</p>
+        <p><strong>Title:</strong> Web Developer</p>
+        <p><strong>Location:</strong> India</p>
+    </section>
+
+    <!-- Feed -->
+    <section class="feed">
+        <h2>News Feed</h2>
+
+        <article>
+            <h3>Jane Doe posted</h3>
+            <p>🎉 Just got a new job at Google!</p>
+        </article>
+
+        <article>
+            <h3>John Smith shared</h3>
+            <p>💡 Learning HTML, CSS, and JavaScript is awesome.</p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 LinkedIn Clone</p>
+    </footer>
+
+</body>
+</html>
